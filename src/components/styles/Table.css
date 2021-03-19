@@ -1,0 +1,41 @@
+.table-component table tbody tr {
+    box-shadow: 0 1px 15px rgb(0 0 0 / 4%), 0 1px 6px rgb(0 0 0 / 4%);
+}
+.table-component  table {
+    border-spacing: 0 1rem;
+    border-collapse: separate!important;
+}
+.table-component table td {
+    background: #fff;
+}
+.table-component table td, .table-component table th{
+    padding: 1.5rem;
+    border: initial;
+}
+.table-component table th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: .8rem;
+}
+.table-component .pages li:nth-child(1),.table-component .pages li:nth-last-child(1){
+    font-size: 0;
+}
+.table-component .pages li:hover:nth-child(1) path,.table-component .pages li:hover:nth-last-child(1) path{
+    fill: #f8f8f8;
+}
+.table-component .pages li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 1px #145388;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: .76rem;
+    transition: all 0.3s ease-in-out;
+}
+.table-component .pages li:hover {
+    background-color: #145388;
+    color: #f8f8f8;
+}

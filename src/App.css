@@ -1,38 +1,223 @@
-.App {
-  text-align: center;
+body{
+    background-color: #f8f8f8;
+    font-size: .8rem;
+}
+body, .btn{
+    color: #3a3a3a;
+}
+.dropdown-item{
+    color: #878787;
+}
+.left-size{
+    width: 120px;
+}
+.input-icon-container{
+    position: relative;
+}
+.input-icon{
+    position: absolute;
+    top: calc(50% - 8.5px);
+    height: 17px;
+    right: 15px;
+    cursor: pointer;    
+}
+.input-icon path{
+    transition: all 0.3s ease-in-out;
+}
+.input-icon:hover path{
+    fill: #145388;
+}
+.form-control{
+    border-radius: .1rem;
+    outline: initial!important;
+    box-shadow: initial!important;
+    font-size: .8rem;
+    padding: .5rem .75rem;
+    line-height: 1;
+    border: 1px solid #d7d7d7;
+    background: #fff;
+    color: #3a3a3a;
+    border-color: #d7d7d7;
+    height: calc(2em + .8rem);
+}
+label {
+    display: inline-block;
+    margin-bottom: .2rem;
+}
+.form-control:focus, .btn:focus{
+    box-shadow: none;
+}
+.btn-icon{
+    position: relative;
+    line-height: 17px;
+}
+.btn-icon .burble{
+    position: absolute;
+}
+.burble {    
+    width: 18px;
+    height: 15px;
+    border: solid 1px #145388;
+    border-radius: 20px;
+    font-size: 11px;
+    line-height: 14px;
+    top: calc(50% - 16px);
+    right: calc(50% - 20px);
+}
+.dropdown-item{
+    font-size: .9em;
+}
+.btn:hover, .burble{
+    color: #145388;
+}
+.btn line, .btn:hover path{
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover line{
+    stroke: #145388;
+}
+.btn:hover path{
+    fill: #145388;
+}
+.dropdown-item.active, .dropdown-item:active{
+    background-color: #145388;
+}
+.btn, .btn-sm, .btn-group-sm > .btn {
+    border-radius: 50px;
+}
+.btn-primary {
+    background-color: #145388;
+    border-color: #145388;
+    color: #fff;    
+}
+.btn-lg{
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .08rem;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: #0c3253;
+    border-color: #0c3253;
+    color: #fff;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0f3d64;
+    border-color: #0f3d64;
+}
+.btn-outline-primary{
+    border-color: #145388;
+}
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #145388;
+    border-color: #145388;
+}
+.btn-outline-primary:hover path {
+    fill: #fff;
+}
+.btn-group-lg>.btn, .btn-lg {
+    padding: .75rem 2.6rem .6rem 2.6rem;
+}
+.btn-group-sm>.btn {
+    padding: .25rem 1.25rem;
+    font-size: .76rem;
+    line-height: 1.3;
+}
+.text-muted {
+    color: #909090!important;
+}
+p{
+    font-size: .85rem;
+}
+.btn-link {
+    color: #145388;
+    text-decoration: initial!important;
+}
+.btn-link:hover {
+    color: rgba(20,83,136,.7);
+}
+.h-100-force{
+    max-height: 100%;
+    height: 100%;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #b2b2b2;
+}
+::-webkit-scrollbar-track{
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: inset 7px 10px 12px transparent;
+}
+.form-select {
+    border-radius: .1rem;
+    padding: .75rem;
+    font-size: .8rem;
+    line-height: 1;
+    height: calc(2em + .8rem);
+}
+.form-control::placeholder{
+    color:#8f8f8f;
+}
+.card.active {
+    box-shadow: 0px 0px 2px 2px rgb(0 173 255 / 20%);
+    border-color: transparent;
+}
+.card h6{
+    font-size: 0.9em;
+}
+.card .datos{
+    font-size: 0.9em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card.card-add::before, .card.card-add::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #d6d7d8;
+    position: absolute;
+    top: calc(50% - 2px);
+    border-radius: 50px;
+    left: calc(50% - 15px);
+}
+.card.card-add::after{
+    width: 4px;
+    height: 30px;
+    top: calc(50% - 15px);
+    left: calc(50% - 2px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table.mini{
+    border-spacing: 0 .5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.table.mini thead th{
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.table.mini tbody tr{
+    box-shadow: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table.mini tr td, table.mini tr th {
+    padding: .9rem;
+    border: initial;
+}
+
+.table.mini tbody td, .table.mini tfoot td{
+    background-color: #f8f8f8;
+}
+
+.table.mini tfoot td{
+    font-weight: bold;
 }

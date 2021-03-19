@@ -1,0 +1,84 @@
+aside{
+    position: fixed;
+    top: 90px;
+    right: 0;
+    height: calc(100% - 90px);
+    width: 280px;
+    background-color: #fff;
+    box-shadow: 0 1px 15px rgb(0 0 0 / 4%), 0 1px 6px rgb(0 0 0 / 4%);    
+}
+
+aside .aside-title-block{
+    padding: 5px 24px 0;
+}
+
+aside .nav-tabs {
+    padding: 15px 24px 18px;
+}
+
+aside .nav-tabs .nav-item button{
+    border: none;
+    padding: 0;
+    line-height: 1.3em;
+    font-size: 0.98em;
+    position: relative;
+    overflow: visible;
+}
+aside .nav-tabs .nav-item button:not(.active){
+    color: #d7d7d7;
+}
+aside .nav-tabs .nav-item button:before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #c4c4c4;
+    display: block;
+    position: absolute;
+    bottom: -23px;
+    left: calc(50% - 6px);
+    border-radius: 50%;
+}
+aside .nav-tabs .nav-item button:after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #3a3a3a;
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 3px);
+    border-radius: 50%;
+}
+aside .nav-tabs .nav-item button:not(.active):after{
+    background-color: #fff;
+}
+aside .content-buttons{
+    position: absolute;
+    bottom: 0;
+    padding: 8px 24px;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    height: 70px;
+    box-shadow: 0 -1px 15px rgb(0 0 0 / 4%), 0 1px 6px rgb(0 0 0 / 4%);
+}
+aside .tab-pane {
+    padding: 15px 24px 70px;
+    overflow-y: auto;
+}
+aside .aside-container{
+    position: relative;
+    max-height: 100%;
+    height: 100%;
+}
+.aside-content-block{
+    max-height: calc(100% - 79px);
+    height: calc(100% - 79px);
+}
+aside .tab-content{
+    max-height: calc(100% - 65px);
+    height: calc(100% - 65px);;
+}
+aside .nav-item button::first-line {
+    font-weight: bold;
+}
